@@ -10,6 +10,8 @@ const hbs = require("hbs");
 //console.log(path.join(__dirname, "../public"))
 //we can generate express app using call to express
 const app = express(); //store our express application in variable app
+//setup port for heroku
+const port = process.env.PORT || 3000 //port value heoku provides. set port value provided by heroku or 3000 
 
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -133,6 +135,6 @@ app.get('*', (req,res) => {
     })
 })
 //start the server
-app.listen(3000, () => {
-  console.log(`Server is up on port 3000`);
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
