@@ -1,5 +1,5 @@
 
-console.log("Clent Side Javascript file is loaded")
+
 //fetch takes url of the api
 //take time to fetch api then run the function
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
